@@ -73,8 +73,6 @@ html,body{
 .navSection div a:hover{
     color: #204F0A;
     text-decoration: underline;
-
-
 }
 
 
@@ -147,7 +145,7 @@ html,body{
 }
  */
 
- .projects {
+.projects {
     display: grid;
     width: 88.2vw;
     margin: auto;
@@ -155,14 +153,24 @@ html,body{
     gap: 2.12vw;
     margin-bottom: 9.1vw;
 }
+#p{
+    transition: all 0.25s ease;
+    width: 100%;
+}
 
-.p img {
+#p img {
     width: 100%;
     height: auto;
     object-fit: cover; 
+    
 }
 
+.text{
+    /* width: 28.42vw; */
+}
 .c1 {
+ 
+
     color: #1D221B;
     font-size: 1.3vw;
     line-height: 1.56vw;
@@ -170,7 +178,9 @@ html,body{
     font-weight: 500;
 }
 
-.c2 {
+.c2 { 
+  
+
     color: #1D221B9E;
     font-size: 1.17vw; 
     line-height: 1.56vw;
@@ -178,6 +188,23 @@ html,body{
     font-weight: 500;
 }
 
+.text1{
+    width: 27.42vw;
+}
+
+#p:hover  {
+    transform: scale(1.05); 
+    border-radius: 12px;
+    background-color: #DADACA66;
+    color: white;
+    text-align: center;
+}
+#p img:hover{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: white;
+
+}
 
 @media (max-width: 1024px) {
     .projects {
@@ -249,6 +276,7 @@ form {
     gap: 0.52vw;
 }
 
+
 .text{
     width: 22.42vw;
 }
@@ -282,8 +310,8 @@ input, textarea, button {
 }
 
 .submit:hover{
-    background-color: white;
-    color: black;
+    background-color: #1D221B;
+    color: white;
 }
 
 textarea {
@@ -323,6 +351,11 @@ textarea {
     cursor: pointer;
     border-radius: 0.52vw;
 
+}
+
+.subscribe:hover{
+    background-color: #204F0A;
+    color: white;
 }
 
 
