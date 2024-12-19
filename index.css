@@ -22,6 +22,7 @@ html,body{
     left: 50%;
     transform: translateX(-50%);
     border-bottom:0.065vw solid #17340929  ;
+    z-index: 1;
 
 }
 
@@ -69,6 +70,13 @@ html,body{
     color: #1D221B;
 }
 
+.navSection div a:hover{
+    color: #204F0A;
+    text-decoration: underline;
+
+
+}
+
 
 .hero{
     width: 88.2vw;
@@ -86,12 +94,23 @@ html,body{
     line-height: 7.2vw;
 }
 
-.hero img{
+.hero .carousel {
     width: 100%;
     height: auto;
     margin: 5.9vw auto 8.24vw auto;
-    
 }
+
+#carouselExampleIndicators {
+    border-radius: 1.43vw;
+    overflow: hidden;
+}
+
+#carouselExampleIndicators .carousel-inner img {
+    border-radius: 1.43vw;
+}
+
+
+
 
 /* .projects {
     display: grid;
@@ -259,10 +278,16 @@ input, textarea, button {
     color: #FBFFFA;
     cursor: pointer;
     width: 5.39vw;
+    border-radius: 0.52vw;
+}
+
+.submit:hover{
+    background-color: white;
+    color: black;
 }
 
 textarea {
-    resize: none;
+    /* resize: none; */
     height: 6.5vw;
 }
 
@@ -296,5 +321,10 @@ textarea {
     line-height: 1.56vw;
     font-size: 1.3vw;
     cursor: pointer;
+    border-radius: 0.52vw;
+
 }
+
+
+
 
